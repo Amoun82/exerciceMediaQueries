@@ -1,0 +1,137 @@
+.conteneur{
+    height: auto;
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.bord{
+    border: 1px dotted black;
+    margin: 20px 0;
+    background:coral;
+    height: 100px;
+    width: 250px;
+}
+
+
+header{
+    display: flex;
+    justify-content: space-around;
+    margin-left: 33.33%;
+}
+
+ul>li{
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 10%;
+}
+
+.range1,.range2,.range3,.range4{
+    display: flex;
+    
+}
+
+.range1{
+    justify-content: space-between;
+    
+}
+
+.range2{
+    justify-content: space-between;
+}
+
+.range3{
+    justify-content: center;
+}
+
+.range4{
+    justify-content: space-between;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+
+/* tablette */
+@media screen and (min-width:820px) and (max-width:1180px) {
+
+    .conteneur{
+        height: auto;
+    }
+
+    .bord{
+        background: orange;
+    }
+
+    ul>li{
+        display: inline-block;
+        text-decoration: none;
+    }
+    
+    .range1{
+        justify-content: center;
+        flex-direction: row-reverse;
+    }
+
+    .range2{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .range3{
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+
+    .range4{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+}
+
+/* smartphone */
+@media screen and (min-width:375px) and (max-width:670px) {
+
+    .conteneur{
+        height: auto;
+    }
+
+    .bord{
+        background: red;
+    }
+
+    header{
+        flex-direction: column;
+        margin:auto;
+    }
+
+    ul>li{
+        display: flex;
+        flex-direction: column;
+        padding-right: 20%;
+        padding-top: 0;
+    }
+
+    .range1{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .range2{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .range3{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .range4{
+        flex-direction: column;
+        align-items: center;
+    }
+}
